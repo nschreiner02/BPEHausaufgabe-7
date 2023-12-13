@@ -1,0 +1,17 @@
+{
+  "generator-ui5-ts-app": {
+    "namespace": "de.octavia.kleinehelden",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.120.2",
+    "author": "Nick Schreiner",
+    "initrepo": false,
+    "tstypes": "@openui5/types",
+    "tstypesVersion": "1.120.2",
+    "appId": "de.octavia.kleinehelden",
+    "appURI": "de/octavia/kleinehelden",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "gte11150": true,
+    "setupCompleted": true
+  }
+}

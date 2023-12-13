@@ -1,0 +1,117 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout"
+	controllerName="de.octavia.kleinehelden.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'de/octavia/kleinehelden/model/formatter'
+	}">
+
+	<Page
+	id="mainPageID"
+	title="Kleine Helden - {viewModel>/title}"
+	titleAlignment="Center">
+	<layout:FixFlex >
+		<layout:fixContent>
+			<form:Form >
+				<form:layout>
+					<form:ResponsiveGridLayout >
+					</form:ResponsiveGridLayout>
+				</form:layout>
+				<form:formContainers >
+					<form:FormContainer >
+						<form:formElements>
+							<form:FormElement >
+								<form:label>
+									<Label text="Name" required="true"></Label>
+								</form:label>
+								<Input
+      								value="{/textBoxValue}" />
+								<form:fields>
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:label>
+								<Label text="Geschlecht" required="true"></Label>
+								</form:label>
+								<form:fields>
+									<RadioButtonGroup>
+									<buttons>
+										<RadioButton text="Junge" > </RadioButton>
+										<RadioButton text="Mädchen" > </RadioButton>
+									</buttons>
+									</RadioButtonGroup>
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:label>
+									<Label text="Buchgröße" required="true"></Label>
+								</form:label>
+									<Select >
+										<items>
+											<core:Item text="12x12" key="12"></core:Item>
+											<core:Item text="10x10" key="10"></core:Item>
+										</items>
+									</Select>
+								<form:fields>
+
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:label>
+									<Label text="Geschichte" required="true"></Label>
+								</form:label>
+									<Select >
+										<items>
+											<core:Item text="Unterwasser" key="Unterwasser"></core:Item>
+											<core:Item text="Abenteuer" key="Abenteuer"></core:Item>
+											<core:Item text="Weltraum" key="Weltraum"></core:Item>
+										</items>
+									</Select>
+								<form:fields>
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:label>
+									<Label text="Widmung"></Label>
+								</form:label>
+								<Input
+      								value="{/textBoxValue}" />
+								<form:fields>
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:label>
+									<Label text="Als Geschenk verpacken" ></Label>
+								</form:label>
+								<form:fields>
+									<CheckBox text="(Zusatzkosten von 5€)"></CheckBox>
+								</form:fields>
+							</form:FormElement>
+
+							<form:FormElement >
+								<form:fields>
+								<VBox 
+								alignContent="Center" >
+									<Button text="Zum Warenkorb hinzufügen" press="addToCounter"></Button>
+								</VBox>
+								</form:fields>
+							</form:FormElement>
+							
+						</form:formElements>
+					</form:FormContainer>
+				</form:formContainers>
+			</form:Form>
+		</layout:fixContent>
+	</layout:FixFlex>
+	
+
+	</Page>
+
+</mvc:View>
