@@ -9,7 +9,7 @@
 	}">
 
 	<Page
-	id="mainPageID"
+	id="mainPageID" 
 	title="Kleine Helden - {viewModel>/title}"
 	titleAlignment="Center">
 	<layout:FixFlex >
